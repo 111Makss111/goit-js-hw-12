@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="search-section">
+        <div class="container">
+          <form class="search-form js-search-form" name="serchImageForm">
+            <div class="input-group mb-3">
+              <input
+                class="form-control js-search-input"
+                type="text"
+                name="searchKeyword"
+                placeholder="Search images"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Start
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homework 12</title>  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <section class="gallery">
+        <div class="container">
+          <ul class="gallery-list js-gallery"></ul>
+          <button class="js-load-more is-hidden load-more">Load more</button>
+          <div class="loader js-loader is-hidden"></div>
+        </div>
+      </section>
+    </main>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
-
-<body>
-
-  <main class="container">
-    <form id="search-form" class="search-form">
-      <input type="text" name="query" placeholder="Search images..." required>
-      <button class="search-btn btn" type="submit">Search</button>
-    </form>
-
-    <ul class="gallery">
-    </ul>
-    
-    <div class="loader-container">
-      <button class="load-more btn" type="button">Load more</button>
-      <span class="loader"></span>
-    </div>
-
-    <a class="up-btn" href="./index.html"> Up </a>
-  </main>
-
-  <script type="module" src="./main.js"></script>
-</body>
-
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
